@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS movies (
  npm run test:e2e
  ```
 
-### Variáveis de Ambient
+### Variáveis de Ambiente
 
 ```
 DB_USER=
