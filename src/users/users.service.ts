@@ -8,12 +8,13 @@ import * as bcrypt from 'bcrypt';
 @Injectable()
 export class UsersService {
   constructor(
-    @InjectRepository(Users) private readonly userRepository: Repository<Users>,
+    @InjectRepository(Users)
+    private readonly usersRepository: Repository<Users>,
   ) {}
 
   async create(createUsersDto: CreateUsersDto) {
     try {
-      const existingUser = await this.userRepository.findOne({
+      const existingUser = await this.usersRepository.findOne({
         where: { email: createUsersDto.email },
       });
 
@@ -22,16 +23,20 @@ export class UsersService {
       }
 
       createUsersDto.password = await bcrypt.hash(createUsersDto.password, 10);
-      const newUser = this.userRepository.create(createUsersDto);
-      await this.userRepository.save(newUser);
+      const newUser = this.usersRepository.create(createUsersDto);
+      await this.usersRepository.save(newUser);
 
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const { password, ...result } = newUser;
+      const { password, ...response } = newUser;
 
-      return result;
+      return response;
     } catch (error) {
       console.error(error);
       throw error;
     }
+  }
+
+  async findOneByEmail(email: string): Promise<Users> {
+    return this.usersRepository.findOne({ where: { email: email } });
   }
 }
