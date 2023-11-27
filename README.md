@@ -41,7 +41,7 @@ Aspectos Técnicos
 
 - Deployment: [Aqui](https://mks-backend-challenge.onrender.com/)
 
-  Observação: A instância quando inativa (devido ao plano gratuito) pode demorar de 1-2 minutos para ficar ativa novamente.
+Observação: A instância quando inativa (devido ao plano gratuito) pode demorar de 1-2 minutos para ficar ativa novamente.
 
 ### Cache
 
