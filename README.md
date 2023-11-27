@@ -70,6 +70,25 @@ CREATE TABLE IF NOT EXISTS movies (
  - **/auth/login:** `POST` para autenticar usuários
  - **/movies:** CRUD de filmes `GET, POST, PATCH e DELETE`
 
+### Testes dos Endpoints
+
+ - Comando: ```npm run test:e2e```
+
+### Variáveis de Ambient
+
+```
+DB_USER=
+DB_HOST=
+DB_PORT=
+DB_PASSWORD=
+DB_NAME=
+
+AUTH_SECRET=
+
+REDIS_URL=
+REDIS_TTL=
+```
+
 Referências
 ---------------
 
