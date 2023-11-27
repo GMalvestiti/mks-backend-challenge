@@ -1,6 +1,9 @@
 Documentação
 ===========================
 
+[![Build Status](https://travis-ci.org/GMalvestiti/mks-backend-challenge.svg?branch=main)](https://travis-ci.org/GMalvestiti/mks-backend-challenge)
+[![Code Coverage](https://codecov.io/gh/GMalvestiti/mks-backend-challenge/branch/main/graph/badge.svg)](https://codecov.io/gh/GMalvestiti/mks-backend-challenge)
+
 ### Conteúdo
 - [Objetivo](#objetivo)
 - [Experiências Prévias](#experiências-prévias)
