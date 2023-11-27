@@ -4,6 +4,8 @@ import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Users } from './users/entities/users.entity';
 import { AuthModule } from './auth/auth.module';
+import { MoviesModule } from './movies/movies.module';
+import { Movies } from './movies/entities/movies.entity';
 
 @Module({
   imports: [
@@ -17,7 +19,7 @@ import { AuthModule } from './auth/auth.module';
         username: configService.get('DB_USERNAME'),
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
-        entities: [Users],
+        entities: [Users, Movies],
         synchronize: true,
         ssl: true,
         extra: {
@@ -30,6 +32,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     UsersModule,
     AuthModule,
+    MoviesModule,
   ],
   controllers: [],
   providers: [],
