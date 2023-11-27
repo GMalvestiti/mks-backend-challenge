@@ -29,15 +29,15 @@ Aspectos Técnicos
 
 ### Organização
 ```
-|-- dist
-|-- node_modules
-|-- src
-    |-- auth
-    |-- movies
-    |-- users
-|-- test
-|-- .env
-|-- package.json
+|-- 📂 dist
+|-- 📂 node_modules
+|-- 📂 src
+    |-- 📂 auth
+    |-- 📂 movies
+    |-- 📂 users
+|-- 📂 test
+|-- 📄 .env
+|-- 📄 package.json
 |-- ...
 ```
 
