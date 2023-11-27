@@ -27,6 +27,20 @@ Aspectos Técnicos
 
 - Deployment: [Aqui](https://mks-backend-challenge.onrender.com/)
 
+### Organização
+```
+|-- dist
+|-- node_modules
+|-- src
+    |-- auth
+    |-- movies
+    |-- users
+|-- test
+|-- .env
+|-- package.json
+|-- ...
+```
+
 ### Banco de Dados
 
  Banco de dados PostgreSQL criado no site vercel.com
