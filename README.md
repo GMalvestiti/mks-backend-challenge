@@ -6,6 +6,7 @@ Documentação
 - [Experiências Prévias](#experiências-prévias)
 - [Aspectos Técnicos](#aspectos-técnicos)
   - [Deployment](#deployment)
+  - [Cache](#cache)
   - [Organização](#organização)
   - [Instalação](#instalação)
   - [Banco de Dados](#banco-de-dados)
@@ -39,6 +40,12 @@ Aspectos Técnicos
  Deployment realizdo como um WebService no site render.com
 
 - Deployment: [Aqui](https://mks-backend-challenge.onrender.com/)
+
+### Cache
+
+ Cache realizado utilizando Redis Cloud.
+ 
+- Redis Cloud: [Aqui](https://redis.io/)
 
 ### Organização
 ```
