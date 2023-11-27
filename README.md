@@ -51,12 +51,12 @@ git clone https://github.com/GMalvestiti/mks-backend-challenge.git
 ```
 npm install
 ```
-3. Renomeie o arquivo .env.example para .env e preencha os valores das variáveis
-4. Execute o projeto
+- 3. Renomeie o arquivo .env.example para .env e preencha os valores das variáveis
+- 4. Execute o projeto
 ```
 npm run start:dev
 ```
-6. Inicie o container Docker
+- 6. Inicie o container Docker
 ```
 docker compose up
 ```
