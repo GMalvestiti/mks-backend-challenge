@@ -6,6 +6,9 @@ import { Users } from './users/entities/users.entity';
 import { AuthModule } from './auth/auth.module';
 import { MoviesModule } from './movies/movies.module';
 import { Movies } from './movies/entities/movies.entity';
+import { CacheModule } from '@nestjs/cache-manager';
+import * as redisStore from 'cache-manager-redis-store';
+import type { RedisClientOptions } from 'redis';
 
 @Module({
   imports: [
@@ -33,6 +36,17 @@ import { Movies } from './movies/entities/movies.entity';
     UsersModule,
     AuthModule,
     MoviesModule,
+    CacheModule.registerAsync<RedisClientOptions>({
+      imports: [ConfigModule],
+      useFactory: async (configService: ConfigService) => ({
+        isGlobal: true,
+        store: typeof redisStore,
+        url: configService.get('REDIS_URL'),
+        ttl: +configService.get<number>('REDIS_TTL'),
+        no_ready_check: true,
+      }),
+      inject: [ConfigService],
+    }),
   ],
   controllers: [],
   providers: [],

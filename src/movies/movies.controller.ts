@@ -7,10 +7,12 @@ import {
   Param,
   Delete,
   ParseUUIDPipe,
+  UseInterceptors,
 } from '@nestjs/common';
 import { MoviesService } from './movies.service';
 import { CreateMoviesDto } from './dto/create-movies.dto';
 import { UpdateMoviesDto } from './dto/update-movies.dto';
+import { CacheInterceptor } from '@nestjs/cache-manager';
 
 @Controller('movies')
 export class MoviesController {
@@ -21,11 +23,13 @@ export class MoviesController {
     return this.moviesService.create(createMoviesDto);
   }
 
+  @UseInterceptors(CacheInterceptor)
   @Get()
   findAll() {
     return this.moviesService.findAll();
   }
 
+  @UseInterceptors(CacheInterceptor)
   @Get(':id')
   findOne(@Param('id', ParseUUIDPipe) id: string) {
     return this.moviesService.findOne(id);
