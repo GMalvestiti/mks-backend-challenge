@@ -18,9 +18,9 @@ Documentação
 Objetivos
 ---------------
 
-1. Autenticação JWT e proteção dos endpoints.
-2. CRUD de um catálogo de filmes.
-3. Arquitetura composta de uma aplicação provendo uma API RESTful em JSON, utilize do Redis como seu cache.
+1. Autenticação JWT e proteção dos endpoints
+2. CRUD de um catálogo de filmes
+3. Arquitetura composta de uma aplicação provendo uma API RESTful em JSON, utilize do Redis como seu cache
 
 Experiências Prévias:
 ---------------
@@ -41,11 +41,11 @@ Aspectos Técnicos
 
 - Deployment: [Aqui](https://mks-backend-challenge.onrender.com/)
 
-Observação: A instância quando inativa (devido ao plano gratuito) pode demorar de 1-2 minutos para ficar ativa novamente.
+Observação: A instância quando inativa (devido ao plano gratuito) pode demorar de 1-2 minutos para ficar ativa novamente
 
 ### Cache
 
- Cache realizado utilizando Redis Cloud.
+ Cache realizado utilizando Redis Cloud
  
 - Redis Cloud: [Aqui](https://redis.io/)
 
