@@ -48,3 +48,20 @@ CREATE TABLE IF NOT EXISTS movies (
   release_year INTEGER
 );
 ```
+
+### Rotas da API
+
+ - **/:** Swagger UI
+ - **/users:** ´POST` para registrar novos usuários
+ - **/auth/login:** ´POST` para autenticar usuários
+ - **/movies:** CRUD de filmes ´GET`, ´POST`, ´PATCH` e ´DELETE`
+
+Referências
+---------------
+
+- Documentação NestJS: [Link](https://docs.nestjs.com/)
+- PostgreSQL: [Link](https://blog.devgenius.io/setting-up-nestjs-with-postgresql-ac2cce9045fe)
+- Swagger: [Link](https://docs.nestjs.com/openapi/introduction)
+- Autenticação JWT: [Link](https://docs.nestjs.com/security/authentication)
+- Docker: [Link](https://dev.to/chukwutosin_/step-by-step-guide-setting-up-a-nestjs-application-with-docker-and-postgresql-5hei)
+- Redis: [Link](https://www.tomray.dev/nestjs-caching-redis)
