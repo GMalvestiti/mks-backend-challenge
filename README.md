@@ -14,7 +14,7 @@ Documentação
   - [Variáveis de Ambiente](#variáveis-de-ambiente)
 - [Referências](#referências)
 
-Objetivo
+Objetivos
 ---------------
 
 1. Autenticação JWT e proteção dos endpoints.
