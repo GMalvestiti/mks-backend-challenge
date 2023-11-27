@@ -73,7 +73,9 @@ CREATE TABLE IF NOT EXISTS movies (
 ### Testes dos Endpoints
 
  - Comando:
-   ```npm run test:e2e```
+ ```
+ npm run test:e2e
+ ```
 
 ### Variáveis de Ambient
 
