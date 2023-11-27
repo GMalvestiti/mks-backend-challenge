@@ -52,9 +52,9 @@ CREATE TABLE IF NOT EXISTS movies (
 ### Rotas da API
 
  - **/:** Swagger UI
- - **/users:** ´POST` para registrar novos usuários
- - **/auth/login:** ´POST` para autenticar usuários
- - **/movies:** CRUD de filmes ´GET, POST, PATCH e DELETE`
+ - **/users:** `POST` para registrar novos usuários
+ - **/auth/login:** `POST` para autenticar usuários
+ - **/movies:** CRUD de filmes `GET, POST, PATCH e DELETE`
 
 Referências
 ---------------
