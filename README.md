@@ -51,7 +51,7 @@ git clone https://github.com/GMalvestiti/mks-backend-challenge.git
 ```
 npm install
 ```
-**3.** Renomeie o arquivo .env.example para .env e preencha os valores das variáveis de ambiente<br>
+**3.** Renomeie o arquivo .env.example para .env e preencha os valores das variáveis de ambiente<br><br>
 **4.** Execute o projeto
 ```
 npm run start:dev
